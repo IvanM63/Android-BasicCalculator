@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:onClick="numberPress"
         android:background="@color/independence"
         android:textColor="@color/white"
         android:ems="10"
@@ -31,6 +32,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_7"
+                android:onClick="numberPress"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="7"
@@ -40,6 +42,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_8"
+                android:onClick="numberPress"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="8"
@@ -49,6 +52,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_9"
+                android:onClick="numberPress"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="9"
@@ -58,6 +62,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_AC"
+                android:onClick="eventAC"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="AC"
@@ -67,6 +72,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_del"
+                android:onClick="eventDEL"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="DEL"
@@ -82,6 +88,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_4"
+                android:onClick="numberPress"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="4"
@@ -91,6 +98,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_5"
+                android:onClick="numberPress"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="5"
@@ -100,6 +108,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_6"
+                android:onClick="numberPress"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="6"
@@ -109,6 +118,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_plus"
+                android:onClick="operationEvent"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="+"
@@ -118,6 +128,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_minus"
+                android:onClick="operationEvent"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="-"
@@ -132,6 +143,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_1"
+                android:onClick="numberPress"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="1"
@@ -141,6 +153,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_2"
+                android:onClick="numberPress"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="2"
@@ -150,6 +163,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_3"
+                android:onClick="numberPress"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="3"
@@ -159,15 +173,17 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_times"
+                android:onClick="operationEvent"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
-                android:text="X"
+                android:text="x"
                 android:textSize="25dp"
                 android:textColor="@color/white"
                 android:background="@color/space_cadet"/>
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
                 android:id="@+id/button_divide"
+                android:onClick="operationEvent"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="/"
@@ -180,8 +196,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <androidx.appcompat.widget.AppCompatButton
-                android:layout_weight="2"
+                android:layout_weight="1"
+                android:id="@+id/button_square"
+                android:onClick="operationEvent"
+                android:layout_width="10dp"
+                android:layout_height="100dp"
+                android:text="sqr"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:background="@color/space_cadet"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_weight="1"
                 android:id="@+id/button_0"
+                android:onClick="numberPress"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="0"
@@ -190,7 +217,8 @@
                 android:background="@color/space_cadet"/>
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="1"
-                android:id="@+id/button_."
+                android:id="@+id/button_coma"
+                android:onClick="numberPress"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="."
@@ -200,6 +228,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_weight="2"
                 android:id="@+id/button_result"
+                android:onClick="resultEvent"
                 android:layout_width="10dp"
                 android:layout_height="100dp"
                 android:text="="
