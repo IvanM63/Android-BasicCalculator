@@ -14,9 +14,8 @@ A simple calculator app made for Android. It can perform most basic calculation.
 
 ## Screenshots
 
-![One](https://raw.githubusercontent.com/IvanM63/Android-BasicCalculator/main/Screenshot/BasicCalculator1.jpg)
-![Two](https://raw.githubusercontent.com/IvanM63/Android-BasicCalculator/main/Screenshot/BasicCalculator2.jpg)
-
+<img src="https://raw.githubusercontent.com/IvanM63/Android-BasicCalculator/main/Screenshot/BasicCalculator1.jpg" alt="Splash Screen" width="151" height="350" /> <img 
+src="https://raw.githubusercontent.com/IvanM63/Android-BasicCalculator/main/Screenshot/BasicCalculator2.jpg" alt="Splash Screen" width="151" height="350" />
 
 ## Technology
 
